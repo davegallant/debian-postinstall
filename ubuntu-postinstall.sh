@@ -6,15 +6,32 @@ sudo apt install -y \
     wget \
     git
 
+# Window manager
+sudo apt install -y \
+	compton \
+	dunst \
+	fonts-mplus \
+	fonts-noto \
+	fonts-firacode \
+	hsetroot \
+	i3 \
+	i3-wm
+	i3lock \
+	i3status \
+	lxappearance \
+	rofi \
+	rxvt-unicode \
+	scrot \
+	suckless-tools \
+	viewnior\
+	xsel \
+	xsettingsd
+
 # Developer tools
 sudo apt install -y \
     shellcheck \
     tmux \
     vim
-
-# Visuals
-sudo apt install -y \
-    fonts-firacode
 
 # zsh
 if [ ! -e $HOME/.oh-my-zsh ]; then
