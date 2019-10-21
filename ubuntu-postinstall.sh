@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 # Basic building block tools
 sudo apt install -y \
@@ -34,7 +34,7 @@ sudo apt install -y \
     vim
 
 # zsh
-if [ ! -e $HOME/.oh-my-zsh ]; then
+if [ ! -e "$HOME/.oh-my-zsh" ]; then
     sudo apt install -y zsh
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
@@ -42,7 +42,7 @@ if [ ! -e $HOME/.oh-my-zsh ]; then
 fi
 
 # docker
-if [ $(docker --help) != 0 ]; then
+if [ "$(docker --help)" != 0 ]; then
     sudo apt install -y \
         apt-transport-https \
         ca-certificates \
@@ -58,10 +58,11 @@ if [ $(docker --help) != 0 ]; then
     sudo apt-get update
     sudo apt-get install docker-ce docker-ce-cli containerd.io
     sudo groupadd docker
-    sudo gpasswd -a $USER docker
+    sudo gpasswd -a "$USER" docker
 fi
 
 # Media
 sudo apt install -y \
-    deluge \
-    vlc
+	deluge \
+	vlc
+
