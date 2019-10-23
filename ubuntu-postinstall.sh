@@ -6,7 +6,7 @@ sudo apt install -y \
     wget \
     git
 
-# Window manager
+# Desktop Env
 sudo apt install -y \
 	compton \
 	dunst \
@@ -24,6 +24,7 @@ sudo apt install -y \
 	scrot \
 	suckless-tools \
 	viewnior\
+	xclip \
 	xsel \
 	xsettingsd
 
