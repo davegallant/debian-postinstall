@@ -1,4 +1,4 @@
-
+#!/usr/bin/env bash
 
 # Basic building block tools
 sudo apt install -y \
@@ -6,17 +6,34 @@ sudo apt install -y \
     wget \
     git
 
-# Developer tools
+# Desktop Env
 sudo apt install -y \
-    git \
-    kitty \
-    shellcheck \
-    tmux \
-    vim
+    compton \
+    dunst \
+    hsetroot \
+    i3 \
+    i3-wm
+    i3lock \
+    i3status \
+    lxappearance \
+    rofi \
+    rxvt-unicode \
+    scrot \
+    suckless-tools \
+    viewnior\
+    xclip \
+    xsel \
+    xsettingsd
 
 # Networking tools
 sudo apt install -y \
     dnsutils
+
+# Developer tools
+sudo apt install -y \
+    shellcheck \
+    tmux \
+    vim
 
 # Printer
 sudo apt install -y \
@@ -24,7 +41,18 @@ sudo apt install -y \
 
 # Visuals
 sudo apt install -y \
+    fonts-noto \
     fonts-firacode \
+    fonts-mplus \
+    ttf-ancient-fonts \
+    ttf-bitstream-vera \
+    ttf-bitstream-vera \
+    ttf-dejavu
+    ttf-dejavu \
+    ttf-freefont \
+    ttf-liberation
+    ttf-mscorefonts-installer \
+    ttf-mscorefonts-installer \
     ttf-ubuntu-font-family
 
 # zsh
@@ -51,5 +79,4 @@ fi
 
 # Media
 sudo apt install -y \
-    deluge \
     vlc
