@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -x
+
 # Basic building block tools
 sudo apt install -y \
     curl \
@@ -12,9 +14,10 @@ sudo apt install -y \
     dunst \
     hsetroot \
     i3 \
-    i3-wm
+    i3-wm \
     i3lock \
     i3status \
+    imagemagick \
     lxappearance \
     rofi \
     rxvt-unicode \
