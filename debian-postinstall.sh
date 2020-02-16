@@ -36,7 +36,9 @@ sudo apt install -y \
 sudo apt install -y \
     shellcheck \
     tmux \
-    vim
+    vim \
+    vim-gtk \
+    vim-nox
 
 # Printer
 sudo apt install -y \
