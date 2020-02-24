@@ -10,21 +10,18 @@ sudo apt install -y \
 
 # Desktop Env
 sudo apt install -y \
+    acpi \
+    bspwm \
     compton \
     dunst \
-    hsetroot \
-    i3 \
-    i3-wm \
-    i3lock \
-    i3status \
+    feh \
     imagemagick \
     lxappearance \
-    rofi \
     rxvt-unicode \
     scrot \
-    suckless-tools \
     viewnior\
     xclip \
+    xdotool \
     xsel \
     xsettingsd
 
