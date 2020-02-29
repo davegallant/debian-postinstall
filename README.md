@@ -2,6 +2,16 @@
 
 Various tools to bootstrap a debian minimal install.
 
-This script has been tested on Debian 10.2.
+## Create a list of all packages installed
 
-Switch to [DebianTesting](https://wiki.debian.org/DebianTesting) to get more recent versions of packages.
+```shell
+dpkg-query --showformat='${Package}\n' --show > packages.list
+```
+
+## Install from a list of packages
+
+```shell
+for package in $(cat packages.list); do
+  sudo apt install -y $package
+done
+```
