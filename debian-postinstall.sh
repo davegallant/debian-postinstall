@@ -61,6 +61,7 @@ sudo apt install -y \
 if [ ! -e $HOME/.oh-my-zsh ]; then
     sudo apt install -y zsh
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    curl -fsSL https://starship.rs/install.sh | bash
 fi
 
 # docker
